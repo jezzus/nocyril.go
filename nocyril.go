@@ -176,7 +176,7 @@ func main() {
 	}
 	vkClient = vkcb.APIWithAccessToken(vkToken)
 
-	confs := make(map[int]GroupConf, len(config.Groups))
+	confs = make(map[int]GroupConf, len(config.Groups))
 	for _, gc := range config.Groups {
 		confs[gc.GroupID] = gc
 	}
